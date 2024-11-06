@@ -6,6 +6,7 @@ class MarkovMachine {
   /** build markov machine; read in text.*/
 
   constructor(text) {
+    // console.log(text);
     let words = text.split(/[ \r\n]+/);
     this.words = words.filter(c => c !== "");
     this.chains = this.makeChains();
@@ -65,3 +66,5 @@ class MarkovMachine {
     return 
   }
 }
+
+module.exports = { MarkovMachine };
