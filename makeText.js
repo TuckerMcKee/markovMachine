@@ -1,9 +1,9 @@
 /** Command-line tool to generate Markov text. */
-const markov = require('markov.js');
+const markov = require('./markov');
 const axios = require('axios');
 const fs = require('fs');
 
-async function getUrlString(url) {
+async function getUrlString(url) { 
     try {
         const res = await axios.get(url);
         return res.data
