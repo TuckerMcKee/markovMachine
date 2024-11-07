@@ -28,12 +28,12 @@ async function makeText() {
                 return data
             });
             mm = new markov.MarkovMachine(text);
-            mm.makeText();
+            console.log(mm.makeText());
             break;
         case 'url':
             text = await getUrlString(process.argv[3]);
             mm = new markov.MarkovMachine(text);
-            mm.makeText();
+            console.log(mm.makeText());
             break;    
     }
 

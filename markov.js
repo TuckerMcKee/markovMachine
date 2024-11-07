@@ -51,8 +51,8 @@ class MarkovMachine {
     let currWord;
     let nextWord;
     let text = [firstWord];
-    for (let x = 0; x < numWords; x++) {
-      if (x == 0) {
+    for (let x = 1; x < numWords; x++) {
+      if (x == 1) {
         currWord = firstWord;
       }
       nextWord = chains[currWord][Math.floor(Math.random() * chains[currWord].length)];
