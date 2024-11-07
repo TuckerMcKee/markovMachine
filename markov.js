@@ -62,8 +62,8 @@ class MarkovMachine {
       text.push(nextWord);
       currWord = nextWord;
     }
-    console.log(text.join(' '));
-    return 
+    // console.log(text.join(' '));
+    return text.join(' ');
   }
 }
 
